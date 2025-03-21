@@ -1,0 +1,65 @@
+body {
+    padding: 0;
+    margin: 0
+}
+#unity-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+#unity-canvas {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 780px;
+    height: 100%;
+    background: url('bg.png') repeat-x;
+    background-size: cover;
+}
+#unity-loading-bar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none
+}
+#unity-logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 45px;
+    background: url('logo.png') no-repeat center;
+    background-size: 100% 100%;
+}
+#unity-progress-bar-empty {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 10px;
+    margin-top: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 5px;
+    background-image: linear-gradient(#effffe, #effffe),
+        linear-gradient(to right, #00d1d8 0%, #007f91 99%, #007f91 100%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    padding: 2px;
+}
+#unity-warning {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%);
+    background: white;
+    padding: 10px;
+    display: none
+}
+#unity-progress-bar-full {
+    width: 0%;
+    height: 10px;
+    background: #2fb1b8;
+}
